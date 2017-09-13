@@ -2,27 +2,27 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <title>Przykład 73 - Praktyczny projekt: Walidacja formularza</title>
+    <title>Form validator in JS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="container">
 
-        <h1>Walidacja formularza</h1>
+        <h1>Form validator in JS</h1>
 
         <form action="#" id="myForm">
-            <input type="text" name="your-name" placeholder="Imię i nazwisko" data-error="Podaj imię i nazwisko">
-            <input type="email" name="your-email" placeholder="Adres e-mail" data-error="Podaj poprawny adres e-mail">
-            <select name="your-subject" data-error="Wybierz temat wiadomości">
-                <option value="" disabled selected>- Temat wiadomości -</option>
-                <option value="pytanie">Pytanie</option>
-                <option value="propozycja">Propozycja</option>
+            <input type="text" name="your-name" placeholder="First name and last name" data-error="Enter first name and last name">
+            <input type="email" name="your-email" placeholder="E-mail address" data-error="Enter correct e-mail address">
+            <select name="your-subject" data-error="Choose the topic of the message">
+                <option value="" disabled selected>- Topic -</option>
+                <option value="question">Question</option>
+                <option value="suggestion">Suggestion</option>
                 <option value="support">Support</option>
             </select>
-            <textarea name="your-message" placeholder="Treść wiadomości" data-error="Wpisz treść wiadomości"></textarea>
+            <textarea name="your-message" placeholder="Message..." data-error="Type your message"></textarea>
 
-            <button type="submit">Wyślij</button>
+            <button type="submit">Send</button>
         </form>
 
     </div>
